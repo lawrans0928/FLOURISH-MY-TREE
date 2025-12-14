@@ -1,0 +1,175 @@
+/* Layout */
+.app-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.mobile-container {
+  width: 390px;
+  height: 844px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.app-content {
+  min-height: 100%;
+  background: linear-gradient(#fff7ed, #fde68a);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.timer {
+  color: #0f766e;
+  font-weight: 600;
+}
+
+.menu-btn {
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0f766e;
+}
+
+/* Tree */
+.tree-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.garland {
+  stroke: #d1d5db;
+  stroke-width: 3;
+  fill: none;
+  opacity: 0.7;
+}
+
+.trunk {
+  fill: #92400e;
+  rx: 3;
+}
+
+/* Carousel */
+.carousel {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.carousel button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Title */
+.tree-title {
+  color: #0f766e;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+/* Reactions */
+.reactions {
+  display: flex;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 8px 24px;
+  border-radius: 999px;
+}
+
+/* Share */
+.share-section {
+  padding-bottom: 32px;
+  text-align: center;
+}
+
+.primary-btn {
+  width: 100%;
+  padding: 14px;
+  background: #0f766e;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.share-section p {
+  color: #ea580c;
+  font-weight: 600;
+}
+
+/* Menu Overlay */
+.menu-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 118, 110, 0.95);
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+.menu-overlay h2 {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 48px;
+}
+
+.menu-buttons {
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.menu-buttons button {
+  padding: 16px;
+  background: #134e4a;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}

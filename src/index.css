@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ================================
+   🌍 GLOBAL THEME & RESET
+================================ */
+
+/* Design tokens */
+:root {
+  --mint-light: #d4e9e2;
+  --mint-medium: #a8d5ba;
+  --mint-dark: #7ac29a;
+
+  --teal-dark: #0d5c4f;
+  --teal-darker: #0a4a3f;
+
+  --orange-red: #c8360e;
+  --orange: #f37021;
+
+  --cream: #f5f1e8;
+  --beige: #e8dcc8;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base font */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ================================
+   🎨 BACKGROUND UTILITIES
+================================ */
+
+.bg-mint-gradient {
+  background: linear-gradient(180deg, #b8dcc7 0%, #d4e9e2 100%);
+}
+
+.bg-pink-pattern {
+  background: linear-gradient(180deg, #ffc0cb 0%, #ffb6c8 100%);
+}
+
+.bg-cream-gradient {
+  background: linear-gradient(180deg, #f5deb3 0%, #f5f1e8 100%);
+}
+
+/* ================================
+   🔘 BUTTONS
+================================ */
+
+.btn-primary {
+  background: linear-gradient(90deg, var(--orange-red), var(--orange));
+  color: white;
+  padding: 16px 32px;
+  border-radius: 999px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  width: 100%;
+  max-width: 500px;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: var(--mint-dark);
+  color: var(--teal-darker);
+  padding: 16px 32px;
+  border-radius: 999px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  width: 100%;
+  max-width: 500px;
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+}
+
+/* ================================
+   🔗 LINKS
+================================ */
+
+.text-link {
+  color: var(--teal-dark);
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ================================
+   ⌨️ INPUTS
+================================ */
+
+.input-field {
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 12px;
+  padding: 16px 24px;
+  font-size: 18px;
+  color: var(--teal-darker);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  outline: none;
+}
+
+.input-field::placeholder {
+  color: rgba(13, 92, 79, 0.4);
+}
+
+/* ================================
+   📊 PROGRESS BAR
+================================ */
+
+.progress-bar {
+  height: 6px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--teal-dark);
+  transition: width 0.3s ease;
+}
+
+/* ================================
+   📱 MOBILE APP SHELL (CORE)
+================================ */
+
+.app-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: #0a0a0a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.mobile-container {
+  width: 430px;   /* ✅ Updated size */
+  height: 932px;  /* ✅ Updated size */
+  background: #ffffff;
+  border-radius: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Hide scrollbar (WebKit) */
+.mobile-container::-webkit-scrollbar {
+  display: none;
+}

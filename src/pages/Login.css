@@ -1,0 +1,93 @@
+/* Full screen background */
+.app-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: #0a0a0a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Mobile frame */
+.mobile-container {
+  width: 390px;
+  height: 844px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+
+/* Page */
+.login-page {
+  min-height: 100%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Back button */
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  align-self: flex-start;
+  margin-bottom: 40px;
+}
+
+/* Center box */
+.login-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+/* Inputs */
+.input-field {
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.input-field:focus {
+  border-color: #0d5c4f;
+}
+
+/* Primary button */
+.btn-primary {
+  padding: 14px;
+  background: #0d5c4f;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #0a4a3f;
+}
+
+/* Link */
+.text-link {
+  margin-top: 20px;
+  background: none;
+  border: none;
+  color: #0d5c4f;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+}
